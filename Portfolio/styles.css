@@ -2,8 +2,6 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oxygen', sans-serif; */
 body, html {
-  margin: 0;
-  padding: 0;
   display: contents;
 }
 
@@ -39,28 +37,39 @@ footer a {
   padding: 10px 40px;
 }
 
+img {
+  width: 120px;
+}
+
 .profile-pic {
-  width: 15%;
+  width: 80%;
   border-radius: 50%;
   border: black solid 5px;
 }
 
-.home-page {
-  margin: 50px;
+.home-page, .resume-page, .projects-page, .contact-page {
+  display: flex;
+  margin: 150px;
   padding-top: 100px;
+  align-items: center;
 }
 
 .about-me-section {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  flex-basis: 20%;
+  width: 50%;
 }
 
 .about-me-text {
-  /* margin: auto 50px; */
+
 }
 .about-me-name {
 
+}
+.home-page {
+  flex-direction: column;
 }
 
 .home-link {
@@ -91,3 +100,31 @@ footer a {
   border-radius: 25%;
   border: black 3px solid;
 }
+
+.resume-pic {
+  width: 15%;
+  border-radius: 25%;
+}
+
+.resume-title {
+  border: #E3E3E3 solid 1px;
+  border-top: none;
+  border-left: none;
+  text-align: center;
+}
+
+.resume-section {
+  margin: 50px;
+}
+
+.hp-project-top3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+}
+/*
+.recent-project-1, .recent-project-2, .recent-project-3 {
+
+} */
