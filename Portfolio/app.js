@@ -8,6 +8,22 @@
 
 // ------------------------- Home Page ------------------------- //
 
+const goToHome = () => {
+
+}
+
+const goToResume = () => {
+
+}
+
+const goToProjects = () => {
+
+}
+
+const goToContact = () => {
+
+}
+
 
 // ------------------------- Resume Page ------------------------- //
 
@@ -50,6 +66,14 @@ const seeSkills = () => {
 // Probably nothing from this page..? //
 
 $(() => {
+
+// Home Page //
+
+$(.'.home-link').on('click', goToHome);
+$(.'.resume-link').on('click', goToResume);
+$(.'.projects-link').on('click', goToProjects);
+$(.'.contact-link').on('click', goToContact);
+
 
 // Resume Page //
 $('.work-text').hide();

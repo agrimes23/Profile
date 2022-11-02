@@ -129,34 +129,11 @@ img {
   margin: 100px;
 }
 
-/* .project-row-1 {
-  display: block;
-  width: 100%;
-}
-.project-row-2 {
-  display: block;
-  width: 100%;
-} */
-/* .project-1, .project-2, .project-3 {
-  display: inline-block;
-  width: 30%;
-} */
-
-.project-1 {
-  float: left;
-  width: 30%;
-}
-
-.project-2 {
-  float: left;
-  width: 30%;
-}
-.project-3 {
-  float: left;
-  width: 30%;
-}
-
-/* .project-4, .project-5 {
-  display: inline-block;
+.project-card {
+  margin: 50px;
+  padding: 30px;
+  background-image: linear-gradient(to bottom right, white, #E3E3E3);
+  border: #E3E3E3 solid 1px;
+  border-radius: 15%;
   width: 50%;
-} */
+}
