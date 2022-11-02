@@ -1,0 +1,52 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif; */
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #00D08E;
+  display: flex;
+  padding: 20px 50px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+ion-icon {
+  margin-top: 10px;
+  margin-right: 8px;
+  font-size: 1.3em;
+}
+
+img {
+  width: 15%;
+  border-radius: 50%;
+  border: black solid 5px;
+}
+
+.about-me-section {
+  margin: auto;
+}
+
+.home-link {
+  align-items: left;
+  width: 60%;
+  margin-top: auto;
+  font-size: 3em;
+  font-family: 'Marck Script', cursive;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  color: white;
+  width: 40%;
+  margin: auto 70px;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+
+.contact-link {
+  padding-right: 50px;
+}
