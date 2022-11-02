@@ -74,9 +74,9 @@ img {
 }
 
 .home-link {
-  align-items: left;
+  text-align: left;
   width: 60%;
-  margin-top: auto 10px;
+  margin-top: 10px;
   font-size: 3em;
   font-family: 'Marck Script', cursive;
   color: white;
@@ -128,3 +128,35 @@ img {
   align-items: center;
   margin: 100px;
 }
+
+/* .project-row-1 {
+  display: block;
+  width: 100%;
+}
+.project-row-2 {
+  display: block;
+  width: 100%;
+} */
+/* .project-1, .project-2, .project-3 {
+  display: inline-block;
+  width: 30%;
+} */
+
+.project-1 {
+  float: left;
+  width: 30%;
+}
+
+.project-2 {
+  float: left;
+  width: 30%;
+}
+.project-3 {
+  float: left;
+  width: 30%;
+}
+
+/* .project-4, .project-5 {
+  display: inline-block;
+  width: 50%;
+} */

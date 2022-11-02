@@ -16,14 +16,14 @@
 const seeWorkHistory = () => {
   $('.skills-text').slideUp()
   $('.edu-text').slideUp()
-  $('.qual-text').slideUp()
+  $('.qual-certs-text').slideUp()
   $('.work-history-text').toggle('slow')
 }
 
 const seeEduHistory = () => {
   $('.work-history-text').slideUp()
   $('.skills-text').slideUp()
-  $('.qual-text').slideUp()
+  $('.qual-certs-text').slideUp()
   $('.edu-text').toggle('slow')
 }
 
@@ -37,7 +37,7 @@ const seeCertifications = () => {
 const seeSkills = () => {
   $('.work-history-text').slideUp()
   $('.edu-text').slideUp()
-  $('.qual-text').slideUp()
+  $('.qual-certs-text').slideUp()
   $('.skills-text').toggle('slow')
 }
 
