@@ -6,16 +6,60 @@
 
 //need to make hide / show for project descriptions
 
+// ------------------------- Home Page ------------------------- //
 
 
+// ------------------------- Resume Page ------------------------- //
+
+
+// might be able to loop slideUps
+const seeWorkHistory = () => {
+  $('.skills-text').slideUp()
+  $('.edu-text').slideUp()
+  $('.qual-text').slideUp()
+  $('.work-history-text').toggle('slow')
+}
+
+const seeEduHistory = () => {
+  $('.work-history-text').slideUp()
+  $('.skills-text').slideUp()
+  $('.qual-text').slideUp()
+  $('.edu-text').toggle('slow')
+}
+
+const seeCertifications = () => {
+  $('.work-history-text').slideUp()
+  $('.edu-text').slideUp()
+  $('.skills-text').slideUp()
+  $('.qual-certs-text').toggle('slow')
+}
+
+const seeSkills = () => {
+  $('.work-history-text').slideUp()
+  $('.edu-text').slideUp()
+  $('.qual-text').slideUp()
+  $('.skills-text').toggle('slow')
+}
+
+// ------------------------- Projects Page ------------------------- //
+
+
+
+// ------------------------- Contact Page ------------------------- //
+
+// Probably nothing from this page..? //
 
 $(() => {
 
+// Resume Page //
+$('.work-text').hide();
 
+$('.work-title').on('click', seeWorkHistory);
+$('.edu-title').on('click', seeEduHistory);
+$('.qual-title').on('click', seeCertifications);
+$('.skill-title').on('click', seeSkills);
 
-
-
-
+// Projects Page //
 
 
 })

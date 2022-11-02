@@ -3,6 +3,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Oxygen', sans-serif; */
 body, html {
   display: contents;
+  font-family: 'Oxygen', sans-serif;
 }
 
 header {
@@ -110,7 +111,10 @@ img {
   border: #E3E3E3 solid 1px;
   border-top: none;
   border-left: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  background-image: linear-gradient(to bottom right, white, #DDFFED);
 }
 
 .resume-section {
@@ -124,7 +128,3 @@ img {
   align-items: center;
   margin: 100px;
 }
-/*
-.recent-project-1, .recent-project-2, .recent-project-3 {
-
-} */
