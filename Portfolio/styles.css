@@ -1,16 +1,20 @@
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oxygen', sans-serif; */
-body {
+body, html {
   margin: 0;
+  padding: 0;
+  display: contents;
 }
 
 header {
   width: 100%;
   background-color: #00D08E;
   display: flex;
+  align-items: stretch;
   padding: 20px 50px;
   font-family: 'Oxygen', sans-serif;
+  position: fixed;
 }
 
 ion-icon {
@@ -19,20 +23,50 @@ ion-icon {
   font-size: 1.3em;
 }
 
-img {
+footer {
+  display: flex;
+  background-color: #00D08E;
+  flex-shrink: 0;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.3em;
+  padding: 20px 50px;
+}
+
+footer a {
+  padding: 10px 40px;
+}
+
+.profile-pic {
   width: 15%;
   border-radius: 50%;
   border: black solid 5px;
 }
 
+.home-page {
+  margin: 50px;
+  padding-top: 100px;
+}
+
 .about-me-section {
-  margin: auto;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-basis: 20%;
+}
+
+.about-me-text {
+  /* margin: auto 50px; */
+}
+.about-me-name {
+
 }
 
 .home-link {
   align-items: left;
   width: 60%;
-  margin-top: auto;
+  margin-top: auto 10px;
   font-size: 3em;
   font-family: 'Marck Script', cursive;
   color: white;
@@ -49,4 +83,11 @@ img {
 
 .contact-link {
   padding-right: 50px;
+}
+
+.project-pic {
+  width: 15%;
+  height: 15%;
+  border-radius: 25%;
+  border: black 3px solid;
 }
