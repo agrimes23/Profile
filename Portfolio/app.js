@@ -83,11 +83,13 @@ const seeSkills = () => {
 // Probably nothing from this page..? //
 
 
-// Dark / Light Mode //
-  let sunnyIcon = $('<ion-icon>').attr({'name': 'sunny-outline'}, {'color': 'yellow' })
-const toggleLightDark = () => {
+// ----------------------- Dark / Light Mode ----------------------- //
 
-  $('#dark-btn').toggleClass('dark-mode')
+
+const toggleLightDark = () => {
+// trying to change dark mode icon to sunny when in dark mode.
+
+  $('#dark-btn').children().toggleClass('dark-mode')
   $('html').toggleClass('dark-mode')
   $('header').toggleClass('dark-mode')
   $('footer').toggleClass('dark-mode')

@@ -4,6 +4,8 @@ font-family: 'Oxygen', sans-serif; */
 body, html {
   font-family: 'Oxygen', sans-serif;
   width: 100%;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 header {
@@ -12,7 +14,6 @@ header {
   display: flex;
   align-items: stretch;
   padding: 20px 50px;
-  font-family: 'Oxygen', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,9 +37,10 @@ footer {
   color: white;
   width: 100%;
   justify-content: center;
-  font-family: 'Oxygen', sans-serif;
   font-size: 1.3em;
-  padding: 20px 50px;
+  padding: 20px 0;
+  margin: auto;
+
 }
 
 footer a {
