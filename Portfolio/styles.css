@@ -16,10 +16,15 @@ header {
   position: fixed;
 }
 
+a {
+  cursor: pointer;
+}
+
 ion-icon {
   margin-top: 10px;
   margin-right: 8px;
   font-size: 1.3em;
+  cursor: pointer;
 }
 
 footer {
@@ -36,10 +41,27 @@ footer {
 
 footer a {
   padding: 10px 40px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 img {
   width: 120px;
+}
+
+button {
+  display: block;
+  background-color: black;
+  color: #00D08E;
+  border-radius: 50%;
+  padding-left: 13px;
+  padding-bottom: 8px;
+  float: right;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .profile-pic {

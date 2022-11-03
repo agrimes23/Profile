@@ -1,27 +1,40 @@
 
-// need to make nav bar links clickable and use show() hide() functions with on click listeners
 // need to make project pics with an on click listener and take them to the projects page for that specific project and expand the description
 
 // need to make descriptions (p) show/hide. Toggle???
+
+// how to go to the top of the page when user clicks on section in nav bar
 
 //need to make hide / show for project descriptions
 
 // ------------------------- Home Page ------------------------- //
 
 const goToHome = () => {
-
+  $('.resume.page').hide()
+  $('.projects-page').hide()
+  $('.contact-page').hide()
+  $('.home-page').show()
 }
 
 const goToResume = () => {
-
+  $('.home-page').hide()
+  $('.projects-page').hide()
+  $('.contact-page').hide()
+  $('.resume-page').show()
 }
 
 const goToProjects = () => {
-
+  $('.home-page').hide()
+  $('.resume-page').hide()
+  $('.contact-page').hide()
+  $('.projects-page').show()
 }
 
 const goToContact = () => {
-
+  $('.home-page').hide()
+  $('.resume-page').hide()
+  $('.projects-page').hide()
+  $('.contact-page').show()
 }
 
 
@@ -30,6 +43,7 @@ const goToContact = () => {
 
 // might be able to loop slideUps
 const seeWorkHistory = () => {
+
   $('.skills-text').slideUp()
   $('.edu-text').slideUp()
   $('.qual-certs-text').slideUp()
@@ -37,6 +51,7 @@ const seeWorkHistory = () => {
 }
 
 const seeEduHistory = () => {
+
   $('.work-history-text').slideUp()
   $('.skills-text').slideUp()
   $('.qual-certs-text').slideUp()
@@ -44,6 +59,7 @@ const seeEduHistory = () => {
 }
 
 const seeCertifications = () => {
+
   $('.work-history-text').slideUp()
   $('.edu-text').slideUp()
   $('.skills-text').slideUp()
@@ -51,6 +67,7 @@ const seeCertifications = () => {
 }
 
 const seeSkills = () => {
+
   $('.work-history-text').slideUp()
   $('.edu-text').slideUp()
   $('.qual-certs-text').slideUp()
@@ -65,14 +82,19 @@ const seeSkills = () => {
 
 // Probably nothing from this page..? //
 
+
+
 $(() => {
 
 // Home Page //
+$('.resume-page').hide()
+$('.projects-page').hide()
+$('.contact-page').hide()
 
-$(.'.home-link').on('click', goToHome);
-$(.'.resume-link').on('click', goToResume);
-$(.'.projects-link').on('click', goToProjects);
-$(.'.contact-link').on('click', goToContact);
+$('.home-link').on('click', goToHome);
+$('.resume-link').on('click', goToResume);
+$('.projects-link').on('click', goToProjects);
+$('.contact-link').on('click', goToContact);
 
 
 // Resume Page //
