@@ -2,8 +2,8 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oxygen', sans-serif; */
 body, html {
-  display: contents;
   font-family: 'Oxygen', sans-serif;
+  width: 100%;
 }
 
 header {
@@ -14,6 +14,8 @@ header {
   padding: 20px 50px;
   font-family: 'Oxygen', sans-serif;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 a {
@@ -52,7 +54,7 @@ img {
 
 button {
   display: block;
-  background-color: black;
+  background-color: #909090;
   color: #00D08E;
   border-radius: 50%;
   padding-left: 13px;
@@ -62,6 +64,11 @@ button {
   font-size: 2em;
   margin-bottom: 35px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #FFE354;
 }
 
 .profile-pic {
@@ -158,4 +165,48 @@ button {
   border: #E3E3E3 solid 1px;
   border-radius: 15%;
   width: 50%;
+}
+
+
+/* ------------------ DARK MODE ------------------ */
+
+/* #00362A  <- resume title divs for dark mode???*/
+
+body.dark-mode, html.dark-mode {
+  background-color: #2F2F2F;
+  color: white;
+}
+
+header.dark-mode, footer.dark-mode {
+  background-color: #002E18;
+  color: white;
+}
+
+button.dark-mode:hover {
+
+  background-color: black;
+  color: #FFE354;
+}
+
+.profile-pic.dark-mode, .project-pic.dark-mode {
+  border: white 5px solid;
+}
+
+.resume-title.dark-mode {
+  border-bottom: #272727 solid 2px;
+  border-right: #272727 solid 2px;
+  background-image: linear-gradient(to bottom right, #3D3D3D, #272727);
+}
+
+.project-card.dark-mode {
+  border: #272727 solid 5px;
+  background-image: linear-gradient(to bottom right, #3D3D3D, #272727);
+}
+
+input.dark-mode, textarea.dark-mode {
+  background-color: #4C4C4C;
+  color: white;
+}
+.projects-page a.dark-mode {
+  color: #00D08E;
 }

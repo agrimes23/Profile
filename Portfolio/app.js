@@ -10,7 +10,7 @@
 // ------------------------- Home Page ------------------------- //
 
 const goToHome = () => {
-  $('.resume.page').hide()
+  $('.resume-page').hide()
   $('.projects-page').hide()
   $('.contact-page').hide()
   $('.home-page').show()
@@ -83,6 +83,23 @@ const seeSkills = () => {
 // Probably nothing from this page..? //
 
 
+// Dark / Light Mode //
+  let sunnyIcon = $('<ion-icon>').attr({'name': 'sunny-outline'}, {'color': 'yellow' })
+const toggleLightDark = () => {
+
+  $('#dark-btn').toggleClass('dark-mode')
+  $('html').toggleClass('dark-mode')
+  $('header').toggleClass('dark-mode')
+  $('footer').toggleClass('dark-mode')
+  $('.profile-pic').toggleClass('dark-mode')
+  $('.project-pic').toggleClass('dark-mode')
+  $('.resume-title').toggleClass('dark-mode')
+  $('.project-card').toggleClass('dark-mode')
+  $('input').toggleClass('dark-mode')
+  $('textarea').toggleClass('dark-mode')
+  $('.projects-page a').toggleClass('dark-mode')
+}
+
 
 $(() => {
 
@@ -106,6 +123,10 @@ $('.qual-title').on('click', seeCertifications);
 $('.skill-title').on('click', seeSkills);
 
 // Projects Page //
+
+
+// Dark Mode //
+$('#dark-btn').on('click', toggleLightDark);
 
 
 })
