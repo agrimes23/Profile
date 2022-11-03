@@ -37,6 +37,30 @@ const goToContact = () => {
   $('.contact-page').show()
 }
 
+const goToFirstProj = () => {
+  goToProjects()
+  $('#desc-text-2').hide()
+  $('#desc-text-3').hide()
+  
+  $('#desc-text-1').show('slow')
+}
+
+const goToSecondProj = () => {
+  goToProjects()
+  $('#desc-text-1').hide()
+  $('#desc-text-3').hide()
+
+  $('#desc-text-2').show('slow')
+}
+
+const goToThirdProj = () => {
+  goToProjects()
+  $('#desc-text-1').hide()
+  $('#desc-text-2').hide()
+
+  $('#desc-text-3').show('slow')
+}
+
 
 // ------------------------- Resume Page ------------------------- //
 
@@ -110,10 +134,20 @@ $('.resume-page').hide()
 $('.projects-page').hide()
 $('.contact-page').hide()
 
+$('#desc-text-1').hide()
+$('#desc-text-2').hide()
+$('#desc-text-3').hide()
+$('#desc-text-4').hide()
+$('#desc-text-5').hide()
+
 $('.home-link').on('click', goToHome);
 $('.resume-link').on('click', goToResume);
 $('.projects-link').on('click', goToProjects);
 $('.contact-link').on('click', goToContact);
+
+$('.recent-project-1').on('click', goToFirstProj);
+$('.recent-project-2').on('click', goToSecondProj);
+$('.recent-project-3').on('click', goToThirdProj);
 
 
 // Resume Page //
