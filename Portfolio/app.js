@@ -41,7 +41,7 @@ const goToFirstProj = () => {
   goToProjects()
   $('#desc-text-2').hide()
   $('#desc-text-3').hide()
-  
+
   $('#desc-text-1').show('slow')
 }
 
@@ -99,7 +99,25 @@ const seeSkills = () => {
 }
 
 // ------------------------- Projects Page ------------------------- //
+const showDesc1 = () => {
+  $('#desc-text-1').toggle()
+}
 
+const showDesc2 = () => {
+  $('#desc-text-2').toggle()
+}
+
+const showDesc3 = () => {
+  $('#desc-text-3').toggle()
+}
+
+const showDesc4 = () => {
+  $('#desc-text-4').toggle()
+}
+
+const showDesc5 = () => {
+  $('#desc-text-5').toggle()
+}
 
 
 // ------------------------- Contact Page ------------------------- //
@@ -159,6 +177,11 @@ $('.qual-title').on('click', seeCertifications);
 $('.skill-title').on('click', seeSkills);
 
 // Projects Page //
+$('#desc-1').on('click', showDesc1);
+$('#desc-2').on('click', showDesc2);
+$('#desc-3').on('click', showDesc3);
+$('#desc-4').on('click', showDesc4);
+$('#desc-5').on('click', showDesc5);
 
 
 // Dark Mode //

@@ -97,7 +97,7 @@ button:hover {
   align-items: center;
 }
 
-.resume-page, .contact-page {
+.resume-page, .contact-page, .projects-page {
   flex-direction: column;
   margin: 170px;
   /* padding-top: 50px; */
@@ -124,7 +124,6 @@ button:hover {
 }
 
 .see-more {
-  /* align-items: center; */
   text-align: center;
   margin-top: 70px;
 }
@@ -174,24 +173,6 @@ button:hover {
   opacity: 30%;
 }
 
-.resume-pic {
-  width: 15%;
-  border-radius: 25%;
-}
-
-.resume-title {
-  border: #E3E3E3 solid 1px;
-  border-top: none;
-  border-left: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  background-image: linear-gradient(to bottom right, white, #DDFFED);
-}
-
-.resume-section {
-  margin: 50px;
-}
 
 .hp-projects {
   margin-top: 150px;
@@ -207,17 +188,55 @@ button:hover {
   justify-content: space-around;
 }
 
+/* ---------------------- Resume Page ---------------------- */
+
+.resume-pic {
+  width: 15%;
+  border-radius: 25%;
+}
+
+.resume-title {
+  border: #E3E3E3 solid 1px;
+  border-top: none;
+  border-left: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, white, #DDFFED);
+}
+
+.resume-title:hover {
+  background-image: linear-gradient(to bottom right, #DDFFED, white);
+}
+
+.resume-section {
+  margin: 50px;
+  width: 90%;
+}
 
 /* ---------------------- Projects Page ---------------------- */
 
 
-div.projects-layout {
+.projects-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
  .proj-img {
-  width: 80px;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+
+ .row-1, .row-2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 100px;
  }
 
 .projects-header {
@@ -232,11 +251,36 @@ div.projects-layout {
   background-image: linear-gradient(to bottom right, white, #E3E3E3);
   border: #E3E3E3 solid 1px;
   border-radius: 15%;
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  min-height: 400px;
 }
 
+.project-card:hover {
+  background-image: linear-gradient(to bottom right, #E3E3E3, white);
+}
+
+
 /* ---------------------- Contacts Page ---------------------- */
+
+.contact-page h2 {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-user-name {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.input-text-area h5 {
+  display:inline;
+  margin-right: 20px;
+}
+
+.contact-user-message h5 {
+  display: block;
+}
 
 
 /* ---------------------- DARK MODE ---------------------- */
@@ -267,6 +311,10 @@ button.dark-mode:hover {
   border-bottom: #272727 solid 2px;
   border-right: #272727 solid 2px;
   background-image: linear-gradient(to bottom right, #3D3D3D, #272727);
+}
+
+.resume-title.dark-mode:hover, .project-card.dark-mode:hover {
+  background-image: linear-gradient(to bottom right, #272727, #3D3D3D);
 }
 
 .project-card.dark-mode {
