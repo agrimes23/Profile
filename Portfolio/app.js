@@ -1,10 +1,6 @@
-// need to make project pics with an on click listener and take them to the projects page for that specific project and expand the description
 
-// need to make descriptions (p) show/hide. Toggle???
-
+// TODO //
 // how to go to the top of the page when user clicks on section in nav bar
-
-//need to make hide / show for project descriptions
 
 // ------------------------- NAV BAR ------------------------- //
 // const mediaNavBar = window.matchMedia("(max-width: 1050px)")
@@ -162,6 +158,10 @@ const toggleLightDark = () => {
 
 }
 
+// const wellPlayedGame = () => {
+//   $('')
+// }
+
 
 $(() => {
 
@@ -210,5 +210,8 @@ $('#desc-5').on('click', showDesc5);
 // Dark Mode //
 $('#dark-btn').on('click', toggleLightDark);
 
+
+// game //
+// $('.random-image-game').on('click', wellPlayedGame)
 
 })

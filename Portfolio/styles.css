@@ -154,6 +154,10 @@ button:hover {
   font-family: 'Marck Script', cursive;
 }
 
+.random-image-game {
+  width: 0.5em;
+}
+
 /* --------------------- Nav Bar --------------------- */
 
 .nav-bar {
