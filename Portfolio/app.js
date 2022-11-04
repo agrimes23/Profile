@@ -158,12 +158,24 @@ const toggleLightDark = () => {
 
 }
 
-// const wellPlayedGame = () => {
-//   $('')
-// }
+const wellPlayedGame = () => {
+  $('.hidden-game').css('display', 'inherit')
+
+}
+
+const generateRandImg = () => {
+  const sparkle = $('.random-image-game')
+  let randX = Math.floor(Math.random() * 1350)
+  let randY = Math.floor(Math.random() * 2150)
+
+  sparkle.css( {"top": randY, "left": randX} )
+}
 
 
 $(() => {
+
+generateRandImg()
+
 
 // NAV BAR //
 $('.hamburger-menu-items').hide()
@@ -212,6 +224,10 @@ $('#dark-btn').on('click', toggleLightDark);
 
 
 // game //
-// $('.random-image-game').on('click', wellPlayedGame)
+$('.random-image-game').on('click', wellPlayedGame)
+$('.close-icon').on('click', () => {
+    $('.hidden-game').css('display', 'none')
+    $('.random-image-game').css('display', 'none')
+})
 
 })

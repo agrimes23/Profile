@@ -156,6 +156,29 @@ button:hover {
 
 .random-image-game {
   width: 0.5em;
+  position: absolute;
+}
+
+.hidden-game {
+  display: none;
+  width: 100px;
+  height: 130px;
+  text-align: center;
+  background-color: #DFDFDF;
+  z-index: 3;
+  padding: 30px;
+  border: black solid 2px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px;
+  margin: 0;
+  margin-left: auto;
 }
 
 /* --------------------- Nav Bar --------------------- */
@@ -528,10 +551,7 @@ input.dark-mode, textarea.dark-mode {
     margin: 10px;
     font-size: 1.5em;
   }
-  .close-icon {
-    margin: 10px;
-    font-size: 1.5em;
-  }
+
 }
 
 @media (max-width: 860px) {
