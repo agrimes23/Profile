@@ -1,4 +1,3 @@
-
 // need to make project pics with an on click listener and take them to the projects page for that specific project and expand the description
 
 // need to make descriptions (p) show/hide. Toggle???
@@ -6,6 +5,20 @@
 // how to go to the top of the page when user clicks on section in nav bar
 
 //need to make hide / show for project descriptions
+
+// ------------------------- NAV BAR ------------------------- //
+// const mediaNavBar = window.matchMedia("(max-width: 1050px)")
+//
+// const hamburgerMenu = () => {
+//   if (mediaNavBar.matches) {
+//   }
+// }
+
+
+const showHideNavBar = () => {
+  $('.hamburger-menu-items').slideToggle('slow')
+}
+
 
 // ------------------------- Home Page ------------------------- //
 
@@ -133,19 +146,29 @@ const toggleLightDark = () => {
 
   $('#dark-btn').children().toggleClass('dark-mode')
   $('html').toggleClass('dark-mode')
+  $('body').toggleClass('dark-mode')
   $('header').toggleClass('dark-mode')
   $('footer').toggleClass('dark-mode')
   $('.profile-pic').toggleClass('dark-mode')
+  $('.about-me-title').toggleClass('dark-mode')
   $('.project-pic').toggleClass('dark-mode')
   $('.resume-title').toggleClass('dark-mode')
   $('.project-card').toggleClass('dark-mode')
   $('input').toggleClass('dark-mode')
   $('textarea').toggleClass('dark-mode')
   $('.projects-page a').toggleClass('dark-mode')
+  $('.hamburger-menu-items').toggleClass('dark-mode')
+
+
 }
 
 
 $(() => {
+
+// NAV BAR //
+$('.hamburger-menu-items').hide()
+$('#close-icon').hide()
+$('#burger-icon').on('click', showHideNavBar)
 
 // Home Page //
 $('.resume-page').hide()

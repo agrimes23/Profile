@@ -6,6 +6,7 @@ body, html {
   width: 100%;
   margin-bottom: 0;
   margin-left: 0;
+  background-color: #F0F0F0;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+  order: 1;
 }
 
 a {
@@ -54,16 +56,18 @@ footer a {
 button {
   display: block;
   background-color: #909090;
-  color: #00D08E;
+  color: #FFE354;
   border-radius: 50%;
   padding-left: 13px;
   padding-bottom: 8px;
-  float: right;
+  float: left;
   text-align: center;
   font-size: 2em;
   margin-right: 50px;
   margin-left: 50px;
   cursor: pointer;
+  margin-top: 130px;
+  position:fixed;
 }
 
 button:hover {
@@ -150,6 +154,8 @@ button:hover {
   font-family: 'Marck Script', cursive;
 }
 
+/* --------------------- Nav Bar --------------------- */
+
 .nav-bar {
   display: flex;
   color: white;
@@ -159,9 +165,46 @@ button:hover {
   font-size: 1.3em;
 }
 
-.contact-link {
+.pc-contact-link {
   padding-right: 50px;
 }
+
+.burger-icon {
+  visibility: hidden;
+}
+
+.entire-nav-menu {
+  width: 90%;
+}
+
+.hamburger-menu-items {
+
+/* need to have fixed position like the header is */
+/* can have display flexed as well */
+/* how much width? 320?? */
+/* align text/items center */
+  display: flex;
+  position: fixed;
+  min-width: 120px;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+  order: 2;
+  top: 115px;
+  float: left;
+  padding: 30px;
+  background-color: #00D08E;
+
+}
+
+.hamburger-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+/* ------------------------------------------ */
 
 .project-pic {
   width: 250px;
@@ -246,6 +289,7 @@ button:hover {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 100px;
+  width: 100%;
 }
 
 .project-card {
@@ -264,12 +308,22 @@ button:hover {
   background-image: linear-gradient(to bottom right, #E3E3E3, white);
 }
 
+.moon-icon-img {
+  display: inherit;
+}
+
+.sun-icon-img {
+  display: none;
+}
+
 
 /* ---------------------- Contacts Page ---------------------- */
 
+
+
 .contact-page h2 {
-  margin-right: 60px;
-  margin-left: 60px;
+
+  max-width: 80%;
   margin-bottom: 60px;
 }
 
@@ -290,6 +344,8 @@ button:hover {
 
 /* ---------------------- DARK MODE ---------------------- */
 
+/* if darkmode, hide the moon icon show sun icon*/
+
 /* #00362A  <- resume title divs for dark mode???*/
 
 body.dark-mode, html.dark-mode {
@@ -302,14 +358,26 @@ header.dark-mode, footer.dark-mode {
   color: white;
 }
 
-button.dark-mode:hover {
+/* button.dark-mode {
+  background: white;
+  color: #FFE354;
+}
 
+button.dark-mode:hover {
   background-color: black;
   color: #FFE354;
+} */
+
+.hamburger-menu-items.dark-mode {
+  background-color: #002E18;
 }
 
 .profile-pic.dark-mode, .project-pic.dark-mode {
   border: white 5px solid;
+}
+
+.about-me-title.dark-mode {
+  border-right: 2px solid white;
 }
 
 .resume-title.dark-mode {
@@ -335,7 +403,88 @@ input.dark-mode, textarea.dark-mode {
   color: #00D08E;
 }
 
+.moon-icon-img.dark-mode {
+  display: none;
+}
+
+.sun-icon-img.dark-mode {
+  display: inherit;
+}
+
+/* --------------------- MEDIA QUERIES --------------------- */
+
+/* @media (min-width: 1050px) {
+  .hamburger-menu-items {
+    visibility: hidden;
+  }
+} */
+
+@media (max-width: 910px) {
+  .welcome-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .welcome-text {
+    margin-left: 0px;
+  }
+  .about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-me-title {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding-right: 0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .about-me-title.dark-mode {
+    border-right: none;
+    border-bottom: 2px solid white;
+  }
+  .about-me-text {
+    padding: 0;
+  }
+  .projects-header{
+    font-size: 2rem;
+  }
+  .hp-projects {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+  }
+  .hp-project-top3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rec-proj {
+    margin: 20px;
+  }
+  .see-more {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 1161px) {
+
+.profile-pic {
+  width: 250px;
+}
+
+.welcome-text {
+  font-size: 0.9rem;
+}
+
+.welcome-intro {
+  width: 100%;
+}
 
 /* made project card wider */
 
@@ -352,6 +501,33 @@ input.dark-mode, textarea.dark-mode {
   width: 50vw;
 }
 
+}
+
+@media (min-width: 1051px) {
+  .hamburger-menu-items {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav-bar {
+    justify-content: flex-end;
+  }
+
+  .pc-resume-link, .pc-projects-link, .pc-contact-link {
+    visibility: hidden;
+
+  }
+  .burger-icon {
+    text-align: right;
+    visibility: visible;
+    margin: 10px;
+    font-size: 1.5em;
+  }
+  .close-icon {
+    margin: 10px;
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 860px) {
@@ -372,16 +548,47 @@ input.dark-mode, textarea.dark-mode {
     width: 60%;
   }
 
+  .contact-page {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 90%;
+  }
+
+  .contact-page h2 {
+    margin-left: 80px;
+    width: 90%;
+  }
+
+
+  .contact-user-name, .contact-user-email, .contact-user-message {
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  input[type='text'] {
+    font-size: 1.3rem;
+  }
+
+
+  textarea {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
 }
+
+@media (max-width: 660px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
 @media (max-width: 339px) {
   body {
     align-items: center;
   }
-
-  button {
-    margin-top: 130px;
-  }
-
 
 }

@@ -19,20 +19,42 @@
 <body>
   <header>
     <a class="home-link">AG</a>
+    <!-- menu for larger screens -->
     <div class="nav-bar">
-      <a class="resume-link">
+      <a class="resume-link pc-resume-link">
         <ion-icon name="reader-outline"></ion-icon>resumé
       </a>
-      <a class="projects-link">
+      <a class="projects-link pc-projects-link">
         <ion-icon name="layers-outline"></ion-icon>projects
       </a>
-      <a class="contact-link">
+      <a class="contact-link pc-contact-link">
         <ion-icon name="mail-outline"></ion-icon>contact
       </a>
+      <!-- Hamburger Menu for smaller screens -->
+
+        <a id="burger-icon" class="burger-icon">
+          <ion-icon name="menu-outline"></ion-icon>
+        </a>
+        <a id="close-icon" class="close-icon"><ion-icon name="close-outline"></ion-icon></a>
     </div>
   </header>
-  <button type="button" id="dark-btn" class="dark-mode" name="button" alt="dark mode">
-    <ion-icon class="icon-img" name="moon-outline"></ion-icon>
+  <div class="hamburger-container">
+  <div class="hamburger-menu-items">
+    <a class="resume-link burger-link">
+      <ion-icon name="reader-outline"></ion-icon>resumé
+    </a>
+    <a class="projects-link burger-link">
+      <ion-icon name="layers-outline"></ion-icon>projects
+    </a>
+    <a class="contact-link burger-link">
+      <ion-icon name="mail-outline"></ion-icon>contact
+    </a>
+</div>
+</div>
+
+  <button type="button" id="dark-btn" class="contrast" name="button" alt="dark mode">
+    <ion-icon class="moon-icon-img icon-img" name="moon-outline"></ion-icon>
+    <ion-icon class="sun-icon-img icon-img" name="sunny-outline"></ion-icon>
   </button>
   <!-- Home Page   -->
   <div class="home-page">
@@ -232,8 +254,3 @@
 </body>
 
 </html>
-
-
-
-<!-- for hamburger menu -->
-<!-- <ion-icon name="menu-outline"></ion-icon> -->
