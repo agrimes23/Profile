@@ -90,7 +90,7 @@ in this course and will add it once we have learned it.</p>
 <p>I created sections for the user's name, email and message they would like to send to me. There is a submit button that changes color when hovered over. </p>
 
 <h2>Problems / Issues</h2>
-<ol>
+<ul>
 <li>I cannot change the color of the button in regular & hover mode when I change the dark / light mode. </li>
 <li>Making the site responsive was a challenge for me. I'm not used to working with css so it was a good problem to tackle. I ended up using a lot of 
 flexboxes, which for some elements, made it easier to make things responsive as the screens size changed. I also practiced using media queries.</li>
@@ -98,7 +98,7 @@ flexboxes, which for some elements, made it easier to make things responsive as 
 take much time. I evetually figured it out by setting display: none / inherit.</li>
 <li>Making the nave bar extend to the very top corners of the page. I think the html prevented me from extending all the way. I made this work by fixing 
 the header to position 0, 0 by using top:0, left:0.</li>
-</ol>
+</ul>
 
 <h2>Future Plans / Changes</h2>
 <ul>
