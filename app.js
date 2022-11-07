@@ -164,7 +164,9 @@ const toggleLightDark = () => {
   $('textarea').toggleClass('dark-mode')
   $('.projects-page a').toggleClass('dark-mode')
   $('.hamburger-menu-items').toggleClass('dark-mode')
-
+  $('.page-title').toggleClass('dark-mode')
+  $('.message-submit').toggleClass('dark-mode')
+  $('.hidden-game').toggleClass('dark-mode')
 
 }
 

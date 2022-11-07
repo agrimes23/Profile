@@ -376,8 +376,10 @@ footer a {
   background-color: #00D08E;
   color: white;
   display: flex;
+  flex-direction: row-reverse;
   padding: 10px 15px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 88%;
   border-radius: 20%;
 }
 
@@ -428,6 +430,10 @@ a.dark-mode:hover {
   border: white 5px solid;
 }
 
+.page-title.dark-mode {
+  border-bottom: white 3px solid;
+}
+
 .about-me-title.dark-mode {
   border-right: 2px solid white;
 }
@@ -455,12 +461,26 @@ input.dark-mode, textarea.dark-mode {
   color: #00D08E;
 }
 
+.message-submit.dark-mode {
+  background-color: #002E18;
+  color: white;
+}
+
+.message-submit.dark-mode:hover {
+  background-color: white;
+  color: #00D08E;
+}
+
 .moon-icon-img.dark-mode {
   display: none;
 }
 
 .sun-icon-img.dark-mode {
   display: inherit;
+}
+
+.hidden-game.dark-mode {
+  color: black;
 }
 
 /* --------------------- MEDIA QUERIES --------------------- */
@@ -612,10 +632,13 @@ input.dark-mode, textarea.dark-mode {
     width: 90%;
   }
 
-
   .contact-user-name, .contact-user-email, .contact-user-message {
     margin-left: 50px;
     width: 90%;
+  }
+
+  .message-submit {
+    margin-left: 80%;
   }
 
   input[type='text'] {
@@ -636,6 +659,12 @@ input.dark-mode, textarea.dark-mode {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .message-submit {
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1.3em;
   }
 }
 
