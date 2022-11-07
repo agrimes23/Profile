@@ -12,7 +12,7 @@ The html/body I think was preventing the navbar from stretching to the top corne
 right side navigate to different pages on the site. These anchor tags have icons within the text part of the anchor tag so that it shows up as the anchor tag text. 
 Each anchor tag in the nav bar glows when hovered over. </p>
 
-<h4>✨Interation 1✨</h4>
+<h4>✨Interaction 1✨</h4>
 <p>This actually is also a responsive design feature. The jQuery method used is calld <code>slideToggle()</code>. I wanted the menu to not just appear, but to slide down 
 and slide up. Within the <code>()</code> of <code>slideToggle</code>, I used 'slow' to make the animation visual for the user. </p>
 
@@ -25,7 +25,7 @@ One way I solved it was creating a min-width and just setting the display to non
 are links to each respective website. The contact anchor tag sends the user to the contact page. </p>
 
 <h2>Dark Mode</h2>
-<h4>✨Interation 2✨</h4>
+<h4>✨Interaction 2✨</h4>
 <p>I used the <code>toggleClass()</code> method and wrote out two css stylings for light mode (no extra class added to the html elements) and dark mode (.dark-mode class stlying on html elements).
 <code>toggleClass()</code> allows for the <code>.dark-mode</code> class to be toggled on to any html element I use to toggle. If the toggle is on, the elements with <code>.dark-mode</code> will use that css styling. 
 </p>
@@ -40,10 +40,10 @@ This was applied to the children of the button, so both moon and sun icons (inpu
 <h2>Website Pages</h2>
 <p>Before I explain each page, just a brief explanation on how each page shows up on the screen.</p>
 
-<h4>✨Interation 3✨</h4>
+<h4>✨Interaction 3✨</h4>
 <p>I used both the <code>hide()</code> and <code>show()</code> jQuery methods to hide the pages the user didn't click on, and to show the page the user clicked on. </p>
 
-<h4>✨Interation 3.1✨</h4>
+<h4>✨Interaction 3.1✨</h4>
 <p>This was an interaction that wasn't initially included on my list but rather something that I noticed while writing code. For longer pages, 
 the screen wouldn't go to the top of the page, but rather sit in the bottom of the page when the user clicked on another section. I found that the <code>animate()</code> method allowed for that slow scroll up to the top of the current page. Within the parentheses, <code>"scrollTop: "0"</code> is the part of the code that takes the user's screen to the top of the page. </p>
 
@@ -65,7 +65,7 @@ image, it makes the image slightly opaque, just something to let the user know w
 <h2>Resume Page</h2>
 <p>This page has four collapsed sections. Each time you open one section, any other section that's open will automatically close. I though it looked too cluttered to have multiple sections open at the same time. This auto close for sections the user is not looking at allows the user to focus on one section at a time. I also put a gradient color on each section title, and on hover it will show the gradient the opposite way, creating a shine effect.</p>
 
-<h4>✨Interation 3.2✨</h4>
+<h4>✨Interaction 3.2✨</h4>
 <p>I used the <code>slideUp()</code> jQuery method to close all other sections that the user did not click on. And with what the user clicked on, I used the <code>toggle()</code> jQuery method and <code>'slow'</code> in the parentheses to slowly show the clicked section's content. </p>
 
 <h2>Projects Page</h2>
@@ -73,7 +73,7 @@ image, it makes the image slightly opaque, just something to let the user know w
 <p>This page includes cards for each project. On each card: a screenshot of the main section of the project, a short summary of the project, and a link to the github page.
 Each card has a shine effect too just like the resume section titles. I used flexbox <code>flex-start</code> so that it wouldn't affect the other cards in the row too much when the description dropped down. </p>
 
-<h4>✨Interation 3.3✨</h4>
+<h4>✨Interaction 3.3✨</h4>
 This might not count as a new jQuery method, but I used <code>toggle()</code> again to show descriptions on each card. 
 
 <h2>Contact Page</h2>
