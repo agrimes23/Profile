@@ -186,6 +186,16 @@ const generateRandImg = () => {
 
 $(() => {
 
+// on hover,
+
+// $('.project-pic').hover(
+//     function() {
+//         $(this).animate( {'zoom': 1.1} )
+//     },
+//     function() {
+//         $(this).animate( {'zoom': 1} )
+//     });
+
 $('html, body').animate({ scrollTop: "0" })
 generateRandImg()
 
