@@ -153,6 +153,7 @@ const toggleLightDark = () => {
   $('body').toggleClass('dark-mode')
   $('header').toggleClass('dark-mode')
   $('footer').toggleClass('dark-mode')
+  $('a').toggleClass('dark-mode')
   $('.profile-pic').toggleClass('dark-mode')
   $('.about-me-section').toggleClass('dark-mode')
   $('.about-me-title').toggleClass('dark-mode')

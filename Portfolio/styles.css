@@ -1,6 +1,3 @@
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oxygen', sans-serif; */
 body, html {
   font-family: 'Oxygen', sans-serif;
   width: 100%;
@@ -24,6 +21,9 @@ header {
 
 a {
   cursor: pointer;
+}
+a:hover {
+  color: #DDAE00;
 }
 
 ion-icon {
@@ -56,7 +56,7 @@ footer a {
 .contrast {
   display: block;
   background-color: #909090;
-  color: #FFE354;
+  color: #DDAE00;
   border-radius: 50%;
   padding-left: 13px;
   padding-bottom: 8px;
@@ -412,6 +412,9 @@ header.dark-mode, footer.dark-mode {
   background-color: black;
   color: #FFE354;
 } */
+a.dark-mode:hover {
+  color: #00D08E;
+}
 
 .about-me-section.dark-mode {
   background-color: #002E18;
@@ -618,7 +621,6 @@ input.dark-mode, textarea.dark-mode {
   input[type='text'] {
     font-size: 1.3rem;
   }
-
 
   textarea {
     width: 90%;
