@@ -53,7 +53,7 @@ footer a {
   cursor: pointer;
 }
 
-button {
+.contrast {
   display: block;
   background-color: #909090;
   color: #FFE354;
@@ -70,7 +70,7 @@ button {
   position:fixed;
 }
 
-button:hover {
+.contrast:hover {
   background-color: white;
   color: #FFE354;
 }
@@ -375,6 +375,20 @@ button:hover {
   display: block;
 }
 
+.message-submit {
+  background-color: #00D08E;
+  color: white;
+  display: flex;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 20%;
+}
+
+.message-submit:hover {
+  color: #00D08E;
+  background-color: white;
+  cursor: pointer;
+}
 
 /* ---------------------- DARK MODE ---------------------- */
 
@@ -392,12 +406,12 @@ header.dark-mode, footer.dark-mode {
   color: white;
 }
 
-/* button.dark-mode {
+/* .contrast.dark-mode {
   background: white;
   color: #FFE354;
 }
 
-button.dark-mode:hover {
+.contrast.dark-mode:hover {
   background-color: black;
   color: #FFE354;
 } */
@@ -608,6 +622,8 @@ input.dark-mode, textarea.dark-mode {
   textarea {
     width: 90%;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
   }
 
 }
