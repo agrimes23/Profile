@@ -72,11 +72,13 @@ footer a {
 
 .contrast:hover {
   background-color: white;
-  color: #FFE354;
+  color: #DDAE00;
 }
 
 .page-title {
   text-align: center;
+  display: flex;
+  align-items: center;
   margin: 30px auto;
   font-size: 3em;
   padding: 50px 300px;
@@ -110,6 +112,7 @@ footer a {
   margin: 150px 150px 150px;
   /* padding-top: 50px; */
 }
+
 
 .about-me-section {
   display: flex;
@@ -159,6 +162,7 @@ footer a {
 .welcome-logo {
   font-size: 5em;
   font-family: 'Marck Script', cursive;
+  margin-bottom: 40px;
 }
 
 .random-image-game {
@@ -212,11 +216,6 @@ footer a {
 }
 
 .hamburger-menu-items {
-
-/* need to have fixed position like the header is */
-/* can have display flexed as well */
-/* how much width? 320?? */
-/* align text/items center */
   display: flex;
   position: fixed;
   min-width: 120px;
@@ -352,8 +351,6 @@ footer a {
 
 
 /* ---------------------- Contacts Page ---------------------- */
-
-
 
 .contact-page h2 {
 
@@ -585,9 +582,12 @@ input.dark-mode, textarea.dark-mode {
     margin-right: 0px;
     width: 90%;
   }
-  .resume-page-title {
-    margin-bottom: 50px;
+
+  .page-title {
+    padding: 50px;
+    margin: 0;
   }
+
   .name-photo {
     display: flex;
     align-items: center;
@@ -604,7 +604,8 @@ input.dark-mode, textarea.dark-mode {
   }
 
   .contact-page h2 {
-    margin-left: 80px;
+    margin-top: 50px;
+    margin-left: 50px;
     width: 90%;
   }
 

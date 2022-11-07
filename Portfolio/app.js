@@ -19,6 +19,7 @@ const showHideNavBar = () => {
 // ------------------------- Home Page ------------------------- //
 
 const goToHome = () => {
+  $('html, body').animate({ scrollTop: "0" })
   $('.random-image-game').show()
   $('.resume-page').hide()
   $('.projects-page').hide()
@@ -27,6 +28,7 @@ const goToHome = () => {
 }
 
 const goToResume = () => {
+  $('html, body').animate({ scrollTop: "0" })
   $('.random-image-game').hide()
   $('.home-page').hide()
   $('.projects-page').hide()
@@ -35,6 +37,7 @@ const goToResume = () => {
 }
 
 const goToProjects = () => {
+  $('html, body').animate({ scrollTop: "0" })
   $('.random-image-game').hide()
   $('.home-page').hide()
   $('.resume-page').hide()
@@ -43,6 +46,7 @@ const goToProjects = () => {
 }
 
 const goToContact = () => {
+  $('html, body').animate({ scrollTop: "0" })
   $('.random-image-game').hide()
   $('.home-page').hide()
   $('.resume-page').hide()
@@ -181,6 +185,7 @@ const generateRandImg = () => {
 
 $(() => {
 
+$('html, body').animate({ scrollTop: "0" })
 generateRandImg()
 
 
