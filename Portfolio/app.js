@@ -19,6 +19,7 @@ const showHideNavBar = () => {
 // ------------------------- Home Page ------------------------- //
 
 const goToHome = () => {
+  $('.random-image-game').show()
   $('.resume-page').hide()
   $('.projects-page').hide()
   $('.contact-page').hide()
@@ -26,6 +27,7 @@ const goToHome = () => {
 }
 
 const goToResume = () => {
+  $('.random-image-game').hide()
   $('.home-page').hide()
   $('.projects-page').hide()
   $('.contact-page').hide()
@@ -33,6 +35,7 @@ const goToResume = () => {
 }
 
 const goToProjects = () => {
+  $('.random-image-game').hide()
   $('.home-page').hide()
   $('.resume-page').hide()
   $('.contact-page').hide()
@@ -40,6 +43,7 @@ const goToProjects = () => {
 }
 
 const goToContact = () => {
+  $('.random-image-game').hide()
   $('.home-page').hide()
   $('.resume-page').hide()
   $('.projects-page').hide()
@@ -146,6 +150,7 @@ const toggleLightDark = () => {
   $('header').toggleClass('dark-mode')
   $('footer').toggleClass('dark-mode')
   $('.profile-pic').toggleClass('dark-mode')
+  $('.about-me-section').toggleClass('dark-mode')
   $('.about-me-title').toggleClass('dark-mode')
   $('.project-pic').toggleClass('dark-mode')
   $('.resume-title').toggleClass('dark-mode')
@@ -158,6 +163,8 @@ const toggleLightDark = () => {
 
 }
 
+// --------------------- Mini Game --------------------- //
+// Only appears on the first page
 const wellPlayedGame = () => {
   $('.hidden-game').css('display', 'inherit')
 
@@ -166,7 +173,7 @@ const wellPlayedGame = () => {
 const generateRandImg = () => {
   const sparkle = $('.random-image-game')
   let randX = Math.floor(Math.random() * 1350)
-  let randY = Math.floor(Math.random() * 2150)
+  let randY = Math.floor(Math.random() * 1948)
 
   sparkle.css( {"top": randY, "left": randX} )
 }

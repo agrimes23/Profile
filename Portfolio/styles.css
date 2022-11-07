@@ -77,7 +77,10 @@ button:hover {
 
 .page-title {
   text-align: center;
-  margin: 100px;
+  margin: 30px auto;
+  font-size: 3em;
+  padding: 50px 300px;
+  border-bottom: 3px solid black;
 }
 .welcome-intro {
   display: flex;
@@ -93,7 +96,7 @@ button:hover {
 }
 
 .home-page {
-  margin: 170px;
+  margin: 150px;
   padding-top: 120px;
 }
 
@@ -113,6 +116,10 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   width: 60vw;
+  padding: 80px;
+  margin-top: 100px;
+  background-color: #00D08E;
+  color: white;
 }
 
 .welcome-text {
@@ -122,7 +129,7 @@ button:hover {
 
 .about-me-title {
   padding-right: 70px;
-  border-right: black 3px solid;
+  border-right: white 3px solid;
 }
 .about-me-text {
   padding-left: 70px;
@@ -395,6 +402,10 @@ button.dark-mode:hover {
   color: #FFE354;
 } */
 
+.about-me-section.dark-mode {
+  background-color: #002E18;
+}
+
 .hamburger-menu-items.dark-mode {
   background-color: #002E18;
 }
@@ -464,7 +475,7 @@ input.dark-mode, textarea.dark-mode {
   }
   .about-me-title {
     border-right: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     padding-right: 0;
     padding-bottom: 30px;
     margin-bottom: 30px;
