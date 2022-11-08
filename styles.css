@@ -545,35 +545,33 @@ input.dark-mode, textarea.dark-mode {
 }
 
 @media (max-width: 1161px) {
+      .profile-pic {
+        width: 250px;
+      }
 
-.profile-pic {
-  width: 250px;
-}
+      .welcome-text {
+        font-size: 0.9rem;
+      }
 
-.welcome-text {
-  font-size: 0.9rem;
-}
+      .welcome-intro {
+        width: 100%;
+      }
 
-.welcome-intro {
-  width: 100%;
-}
+      /* made project card wider */
 
-/* made project card wider */
+      .page-title {
+        font-size: 2.3rem;
+      }
 
-.page-title {
-  font-size: 2.3rem;
-}
-
-.project-card {
-  width: 80vw;
-  text-align: center;
-  font-size: 1.7rem;
-}
-.proj-img {
-  width: 50vw;
-}
-
-}
+      .project-card {
+        width: 80vw;
+        text-align: center;
+        font-size: 1.7rem;
+      }
+      .proj-img {
+        width: 50vw;
+      }
+    }
 
 @media (min-width: 1051px) {
   .hamburger-menu-items {
@@ -596,7 +594,6 @@ input.dark-mode, textarea.dark-mode {
     margin: 10px;
     font-size: 1.5em;
   }
-
 }
 
 @media (max-width: 860px) {
@@ -651,7 +648,6 @@ input.dark-mode, textarea.dark-mode {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 660px) {
@@ -668,10 +664,8 @@ input.dark-mode, textarea.dark-mode {
   }
 }
 
-
 @media (max-width: 339px) {
   body {
     align-items: center;
   }
-
 }
