@@ -87,7 +87,7 @@ This might not count as a new jQuery method, but I used <code>toggle()</code> ag
 flexboxes, which for some elements, made it easier to make things responsive as the screens size changed. I also practiced using media queries.</li>
 <li>Changing the icon from moon to sun on the dark-mode button took a lot longer than I'd like to admit. It seems such a small feature that shouldn't 
 take much time. I evetually figured it out by setting display: none / inherit.</li>
-<li>Making the nave bar extend to the very top corners of the page. I think the html prevented me from extending all the way. I made this work by fixing 
+<li>Making the nav bar extend to the very top corners of the page. I think the html prevented me from extending all the way. I made this work by fixing 
 the header to position 0, 0 by using <code>top:0</code>, <code>left:0</code>.</li>
 </ul>
 
