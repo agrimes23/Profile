@@ -1,6 +1,7 @@
 <h1>Alex's Profile</h1>
 
 <p>My first ever live site! I will be breaking down the functionality of each page, the challenges I faced and mention at the end some things I would like to improve on in the future.</p>
+<p>Link to live site: https://benevolent-fox-67cf89.netlify.app/</p>
 
 First section:
 
